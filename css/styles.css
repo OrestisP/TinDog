@@ -1,0 +1,177 @@
+body {
+  font-family: 'Montserrat';
+  text-align: center;
+}
+
+/* Attention: the Google Api fpr fonts is new, this is the correct way to
+implement it, not from course!!! */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat';
+  font-weight: 900;
+}
+
+
+p {
+  color: #8f8f8f
+}
+
+/* HEADINGS */
+
+.big-heading {
+  font-family: 'Montserrat';
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* CONTAINER */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* COLOR SECTIONS */
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;   /* black is : #000 */
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+
+/* NAVIGATION BAR SECTION */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu';
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+
+/* Download Buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* the TITLE SECTION */
+
+/* apply this specific padding only to the container-fluid
+inside the title section! */
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+/* Title Image */
+.title-img {
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
+}
+
+/* FEATURES SECTION */
+#features {
+  position: relative;
+  /* we change the color to white to make sure it is NOT transparent
+  this will affect the z-axis arrangement. we have to make the "title-image"
+  go behind the features. */
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+/* For the HOVER STATE we use a pseudo-class: */
+.icon:hover {
+  color: #ff4c68;
+}
+
+/* TESTIMONIALS SECTION */
+#testimonials {
+  background-color: #ef8172;
+}
+
+.testimonial-img {
+  width: 10%;
+  border-radius: 100%;
+  /* to make the img into circle */
+  margin: 20px;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+
+/* PRESS SECTION */
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* PRICING SECTION */
+#pricing {
+  padding: 100px;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/* CALL TO ACTION SECTION */
+
+
+/* THE FOOTER SECTION */
+.social-icon {
+  margin: 20px 10px;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
